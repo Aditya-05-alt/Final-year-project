@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{
+        background-color: beige;
+    }
+    h1{
+        color: red;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 35px;
+    }
+    h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:black ;
+    }
+    Menu{
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    hr{
+        color: black;
+        border: solid;
+    }
+    input{
+        font-size: 20px;
+        color: white;
+        background-color: red;
+        cursor: pointer;
+    }
+</style>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Personality Prediction using CV</h1>
+    <hr>
+    <h2>Admin Dashboard</h2>
+    <Menu>
+        <a href="display.php">View Users</a> <br>
+        <a href="Jobupload.php">Upload Job</a> <br>
+        <a href="viewCv.php">View CV</a> <br>
+        <a href="ScanCv.php">Scan CV</a> <br>   
+        <a href="Cv-Score.php">Send Score</a> <br>
+        <a href="resultAd.php">Check Result</a> <br><br>
+        <input type="button" value="logout" onclick="history.back()">
+    </Menu>
+</body>
+</html>

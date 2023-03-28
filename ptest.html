@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Predition Test</title>
+<style>
+
+    body{
+         background-color: beige;
+    }
+    select{
+        color:white;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: black;
+        border-radius: 10%;
+        cursor: pointer;
+    }
+    h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        color: red;
+        text-align: center;
+    }
+    p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        color:darkcyan;
+        text-align: left;
+    }
+    hr{
+     color: black;
+     border: solid;
+    }
+    label{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+    }
+    input{
+        background-color: red;
+        font-size: 20px;
+        color: azure;
+        cursor:pointer;
+    }
+</style>
+</head>
+<body>
+    <form action="ptest.php" method="post">
+    <h2>Personality Test</h2>
+    <hr>
+   <b><p>Please answer the following questions using a scale from 1 to 5, 
+        where 1 is strongly disagree and 5 is strongly agree.</p></b>
+    
+    <label for="q1">1. Are you a detailed - oriented person or a big-picture thinker ? </label>
+    <br>
+    <select name="q1" id="q1">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>    
+    </select>
+    <br> <br>
+    <label for="q2">2." Can you share your thoughts on taking risks in your life ?"</label>
+    <br>
+    <select name="q2" id="q2">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <label for="q3">3. Do you tend to focus on past experiences or future possibilities ?</label>
+    <br>
+    <select name="q3" id="q3">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <!-- <h3>Contiouness</h3> -->
+    <label for="q4">4. Do you take necessary steps  to ensure that your work is accurate and free of errors?</label>
+    <br>
+    <select name="q4" id="q4">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <label for="q5">5.Will  you be able to handle unexpected obstacles or changes in a project's scope or timeline?</label>
+    <br>
+    <select name="q5" id="q5">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <label for="q6">6. Are you more inclined to follow rules or challenge the authority ?</label>
+    <br>
+    <select name="q6" id="q6">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <!--Extraversion -->
+    <label for="q7">7.Are you comfortable speaking  in a group  and expressing your ideas and opinions?</label>
+    <br>
+    <select name="q7" id="q7">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <label for="q8">8. Are you a naturally outgoing or reserved person ?</label>
+    <br>
+    <select name="q8" id="q8">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <label for="q9">9. Can you rate how you typically handle criticism or negative feedback ?"</label>
+    <br>
+    <select name="q9" id="q9">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <!--Agreebleness-->
+    <label for="q10">10.Do you believe that it is important to consider others' opinions and feelings when making decisions?</label>
+    <br>
+    <select name="q10" id="q10">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <label for="q11">11. Do you tend to be very open and transparent with others ? </label>
+    <br>
+    <select name="q11" id="q11">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <label for="q12">12. Do you often seek out new and exciting experiences  ?</label>
+    <br>
+    <select name="q12" id="q12">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <!--Neuroticism-->
+    <label for="q13">13. Are you able to manage stress and pressure in a workplace?</label>
+    <br>
+    <select name="q13" id="q13">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <label for="q14">14. Do you have the  tendency to be self critical ? </label>
+    <br>
+    <select name="q14" id="q14">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+    <label for="q15">15.Do you believe that it is important to take care of your mental and emotional health to excel in life ?</label>
+    <br>
+    <select name="q15" id="q15">
+        <option value="0">0 - None</option>
+        <option value="1">1 - Strongly Disagree</option>
+        <option value="2">2-  Disagree</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Agree</option>
+        <option value="5">5 - Strongly Agree</option>
+    </select>
+    <br> <br>
+   
+    <input type="submit" value="Submit">
+    <input type="reset" value="Refresh"> 
+    <input type="button"  value="Back" onclick="history.back()">
+</form>
+    
+</body>
+</html>
+<!-- <h3 class="class"></h3> -->
